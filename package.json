@@ -1,0 +1,25 @@
+{
+  "name": "angular-ts-15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack && cp -r src/assets dist/assets"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "^1.5.16",
+    "@types/node": "^6.0.41",
+    "html-webpack-plugin": "^2.22.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.3",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.7"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bookmonkey-api": "^2.0.1"
+  }
+}
