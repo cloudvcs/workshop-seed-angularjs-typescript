@@ -1,10 +1,15 @@
 import * as angular from 'angular';
+import { BookData } from '../shared/book-data.service';
 
 export const selector = 'bookList';
 // <book-list></book-list>
 
 class BookListComponent implements angular.IController {
-  books = [{name: 'Momo'}, {name: 'Harry Potter'}];
+  books;
+
+  constructor(bookData: BookData) {
+    this.books = bookData.getBooks();
+  }
 }
 
 export const config: angular.IComponentOptions = {
